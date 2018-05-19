@@ -19,7 +19,7 @@ cd db-4.8.30.NC/build_unix/
 make -j4
 make install 
 
-cd ~/GameCredits
+cd ~/game
 ./autogen.sh
 ./configure LDFLAGS="-L${GAMECREDITS_PREFIX}/lib/" CPPFLAGS="-I${GAMECREDITS_PREFIX}/include/" -without-gui -without-miniupnpc --disable-tests --disable-bench --with-gui=no
 make -j4
